@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- saved from url=(0162)file:///C:/Users/HP/website/index.html?name=dsghxhzx&gender=other&contact=chdzs&email=hcd%40gmail.com&password=qwerty&repeatPassword=qwerty&g-recaptcha-response=# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="origin-trial" content="Az520Inasey3TAyqLyojQa8MnmCALSEU29yQFW8dePZ7xQTvSt73pHazLFTK5f7SyLUJSo2uKLesEtEa9aUYcgMAAACPeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IkRpc2FibGVUaGlyZFBhcnR5U3RvcmFnZVBhcnRpdGlvbmluZyIsImV4cGlyeSI6MTcyNTQwNzk5OSwiaXNTdWJkb21haW4iOnRydWUsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0=">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./Student Registration Form_files/style.css">
+<title>Student Registration Form</title>
+
+</head>
+<body>
+
+<form id=" studentregistrationForm" onsubmit="return validateForm()">
+    <h2>Student Registration Form</h2>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required="">
+
+    <label for="DOB">DOB:</label>
+    <input type="text" id="DOB" name="DOB" required="">
+
+
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender" required="">
+        <option value="">Select</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+    </select>
+
+    <label for="contact">Contact Information:</label>
+    <input type="text" id="contact" name="contact" required="">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required="">
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required="">
+
+    <label for="repeatPassword">Repeat Password:</label>
+    <input type="password" id="repeatPassword" name="repeatPassword" required="">
+
+    <input type="Register" value="Register">
+    <input type="Cancel" value="Cancel">
+
+    <a href="file:///C:/Users/HP/website/index.html?name=dsghxhzx&amp;gender=other&amp;contact=chdzs&amp;email=hcd%40gmail.com&amp;password=qwerty&amp;repeatPassword=qwerty&amp;g-recaptcha-response=#">Forgot Password?</a>
+
+</form>
+
+<script type="text/javascript" async="" src="./Student Registration Form_files/recaptcha__en.js.download" crossorigin="anonymous" integrity="sha384-IYj915Kg2THoBNjmdS/foxE54s1oGyWWbVt0UcmBj0QjH9eaYwzN4srfPxOlRivE"></script><script>
+    function validateForm() {
+        var password = document.getElementById("password").value;
+        var repeatPassword = document.getElementById("repeatPassword").value;
+
+        if (password != repeatPassword) {
+            alert("Passwords do not match");
+            return false;
+        }
+
+        return true;
+    }
+</script>
+
+<!-- Include the Google reCAPTCHA API -->
+<script src="./Student Registration Form_files/api.js.download" async="" defer=""></script>
+
+
+</body></html>
